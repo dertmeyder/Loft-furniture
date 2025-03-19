@@ -89,7 +89,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 15px 100px;
+    padding: 15px 490px;
     border-bottom: 1px solid #e0e0e0;
     overflow-x: auto;
   }
@@ -348,5 +348,126 @@
   .product-card:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transform: translateY(-5px);
+  }
+
+  .footer {
+    background-color: #fff;
+    padding: 30px 100px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-nav {
+    flex: 1;
+  }
+  
+  .footer-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 30px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-link.active {
+    color: red;
+  }
+  
+  .footer-contact {
+    text-align: right;
+  }
+  
+  .footer-logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-address {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .footer-contact-item .icon {
+    margin-right: 5px;
+  }
+  
+  .footer-contact-item a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Responsive footer */
+  @media (max-width: 992px) {
+    .footer {
+      padding: 30px 50px;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+    }
+    
+    .footer-nav {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    
+    .footer-contact {
+      text-align: left;
+      width: 100%;
+    }
+    
+    .footer-contact-links {
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 30px 20px;
+    }
+    
+    .footer-links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-links {
+      grid-template-columns: 1fr;
+    }
   }
 
