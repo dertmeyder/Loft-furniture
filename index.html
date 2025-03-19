@@ -1,68 +1,175 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loft Мебель</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МЕБЕЛЬ - Интернет-магазин мебели</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-        <header class="header">
-            <div class="top-bar">
-                <div class="container">
-                    <nav class="top-nav">
-                        <a href="#">Главная</a>
-                        <a href="#">О нас</a>
-                        <a href="#">Контакты</a>
-                    </nav>
-                    <div class="top-info">
-                        <span>📞 7 777 777 7777</span>
-                        <a href="#">🚚 Доставка</a>
-                    </div>
-                </div>
-            </div>
-
-            <header class="header">
-                <div class="container header-content">
-                    <div class="logo">
-                        <img src="logo.svg" alt="Логотип">
-                    </div>
-                    <div class="search">
-                        <input type="text" placeholder="Поиск">
-                    </div>
-                <div class="icons">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </div>
-            </div>
-        </header>
-
-    <nav class="menu">
-        <div class="container">
-            <ul>
-                <li><a href="#">Кухни</a></li>
-                <li><a href="#">Спальни</a></li>
-                <li><a href="#">Гостиные</a></li>
-                <li><a href="#">Прихожие</a></li>
-                <li><a href="#">Офисная мебель</a></li>
-                <li><a href="#">Детская</a></li>
-                <li><a href="#" class="sale">Акция</a></li>
-            </ul>
+  <div class="furniture-website">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-nav">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+      </div>
+      <div class="top-bar-contacts">
+        <div class="contact-item">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+          <span>7 (777) 7777 777</span>
         </div>
-    </nav>
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-            
-            </div>
-            <div class="hero-image">
-                <img src="slider.svg" alt="Мебель">
-            </div>
+        <div class="contact-item">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></span>
+          <span>Доставка</span>
         </div>
-    </section>
+      </div>
+    </div>
 
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="logo">
+        <img src="./Logo.svg" alt="МЕБЕЛЬ">
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Поиск">
+      </div>
+      <div class="user-actions">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></span>
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <div class="main-nav">
+      <a href="#" class="nav-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiLz48cmVjdCB4PSIxNCIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIvPjxyZWN0IHg9IjQiIHk9IjE0IiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ii8+PHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ii8+PC9zdmc+" alt="">
+        <span>Кухни</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik00IDE4di04YTggOCAwIDAgMSA4LTggOCA4IDAgMCAxIDggOHY4Ii8+PHBhdGggZD0iTTIsIDE4aDIwIi8+PC9zdmc+" alt="">
+        <span>Спальни</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjIiIHk9IjUiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNCIgcng9IjIiLz48cGF0aCBkPSJNMiA5aDIwIi8+PC9zdmc+" alt="">
+        <span>Гостинные</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDZoMjAiLz48cGF0aCBkPSJNMjIgNnY5YTEgMSAwIDAgMS0xIDFIM2kiPjwvcGF0aD48cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMTgiIGhlaWdodD0iMyIgcng9IjEiLz48cGF0aCBkPSJNMyAxNnYtNCIvPjxwYXRoIGQ9Ik02IDE2di0xIi8+PHBhdGggZD0iTTEwIDE2VjgiLz48cGF0aCBkPSJNMTQgMTZ2LTQiLz48cGF0aCBkPSJNMTggMTZ2LTEiLz48cGF0aCBkPSJNMjIgMTZWMTMiLz48L3N2Zz4=" alt="">
+        <span>Прихожие</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0zIDE3di0zLjVhNCB2IDBiIDAgMCAxIDQtNGgyYTQgNCAwIDAgMSA0IDR2My41Ii8+PHBhdGggZD0iTTE0IDEwaDIuNWEzLjUgMy41IDAgMCAxIDAiLz48cGF0aCBkPSJNMyAxOGgxOCIvPjwvc3ZnPg==" alt="">
+        <span>Офисная мебель</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik02IDE5di03YTYgNiAwIDAgMSA2LTYgNiA2IDAgMCAxIDYgNnY3Ii8+PHJlY3QgeD0iNCIgeT0iMTkiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyIi8+PC9zdmc+" alt="">
+        <span>Детская</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <span>Акция</span>
+      </a>
+      <a href="#" class="nav-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+      </a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>LOFT<br>МЕБЕЛЬ</h1>
+          <p>Современная и удобная мебель в Анапе</p>
+          <button class="btn">СМОТРЕТЬ КАТАЛОГ</button>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1597072689227-8882273e8f6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern furniture">
+        </div>
+      </div>
+      <div class="hero-nav">
+        <button class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+        <button class="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products-section">
+      <h2 class="section-title">Хиты продаж</h2>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-favorite">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Валенсия Beige">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Валенсия Beige</h3>
+            <p class="product-category">Барные стулья</p>
+            <div class="product-price">
+              <span class="current-price">2 300₽</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-favorite">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Толикс-2 White Gloss">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Толикс-2 White Gloss</h3>
+            <p class="product-category">Барные стулья</p>
+            <div class="product-price">
+              <span class="current-price">4 690₽</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-favorite">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="discount-badge">-25%</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Динс Velvet Yellow">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Динс Velvet Yellow</h3>
+            <p class="product-category">Диваны</p>
+            <div class="product-price">
+              <span class="current-price">28 490₽</span>
+              <span class="old-price">37 990₽</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-favorite">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Киссен Navy Blue">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Киссен Navy Blue</h3>
+            <p class="product-category">Диваны</p>
+            <div class="product-price">
+              <span class="current-price">2 300₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
